@@ -59,6 +59,15 @@ ul>li{
   background-position: center;
   background-attachment: scroll;
 }
+.Wedding:hover .text__slide, .Birthday:hover .text__slide, .Events:hover .text__slide{
+  bottom:0
+}
+.Wedding:hover img, .Birthday:hover img, .Events:hover img{
+  transform: scale(1.2);
+}
+.text__slide{
+  background-image: linear-gradient(to bottom,transparent, rgba(0, 0, 0, 0.932), black);
+}
 
 
 
