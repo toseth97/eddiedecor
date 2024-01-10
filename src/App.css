@@ -9,10 +9,33 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: .3s ease-in-out;
 }
 
-.default-bg{
+.default__bg{
   background-color: var(--default-bg);
+}
+.default__text{
+  color: var(--highlighting-color) ;
+}
+
+.logo{
+  mix-blend-mode: multiply;
+}
+.mobile__menu{
+  position: absolute;
+  z-index: 998;
+  top: 0;
+  left: -100%;
+}
+.mobile__menu.active{
+  left: 0%;
+}
+.menu__btn{
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  z-index: 999;
 }
 
 
