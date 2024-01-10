@@ -22,9 +22,9 @@ function App() {
                     </div>
                     <div onClick={() => setMenu((prev) => !prev)}>
                         {menu === false ? (
-                            <i className="bx menu__btn lg:hidden block text-4xl bx-menu-alt-right border p-2 rounded-lg"></i>
+                            <i className="bx menu__btn lg:hidden block text-3xl bx-menu-alt-right border p-2 rounded-lg"></i>
                         ) : (
-                            <i className="bx menu__btn lg:hidden block text-4xl bx-x border p-2 rounded-lg"></i>
+                            <i className="bx menu__btn lg:hidden block text-3xl bx-x border p-2 rounded-lg"></i>
                         )}
                     </div>
                     <Routes>

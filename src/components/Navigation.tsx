@@ -9,7 +9,7 @@ const Navigation = () => {
                 <ul className="w-full flex flex-col items-center justify-center default__text">
                     <li>
                         <Link
-                            className="px-8 py-4 inline-block cursor-pointer hover:translate-x-4"
+                            className="px-8 hover:font-semibold w-full py-4 inline-block cursor-pointer hover:translate-x-4"
                             to=""
                         >
                             Home
@@ -17,7 +17,7 @@ const Navigation = () => {
                     </li>
                     <li>
                         <Link
-                            className="px-8 py-4 inline-block cursor-pointer hover:translate-x-4"
+                            className="px-8 hover:font-semibold w-full py-4 inline-block cursor-pointer hover:translate-x-4"
                             to=""
                         >
                             Service
@@ -25,7 +25,7 @@ const Navigation = () => {
                     </li>
                     <li>
                         <Link
-                            className="px-8 py-4 inline-block cursor-pointer hover:translate-x-4"
+                            className="px-8 hover:font-semibold w-full py-4 inline-block cursor-pointer hover:translate-x-4"
                             to=""
                         >
                             About
@@ -33,7 +33,7 @@ const Navigation = () => {
                     </li>
                     <li>
                         <Link
-                            className="px-8 py-4 inline-block cursor-pointer hover:translate-x-4"
+                            className="px-8 hover:font-semibold w-full py-4 inline-block cursor-pointer hover:translate-x-4"
                             to=""
                         >
                             Contact

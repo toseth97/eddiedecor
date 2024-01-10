@@ -37,6 +37,10 @@
   right: 6px;
   z-index: 999;
 }
+ul>li{
+  width: 100%;
+  text-align: center;
+}
 
 
 
