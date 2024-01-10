@@ -5,7 +5,12 @@ const Navigation = () => {
     return (
         <header className="flex flex-col items-center py-8 w-full">
             <nav className="flex flex-col items-center justify-center w-full">
-                <img src={Logo} alt="logo" width={150} className="logo" />
+                <img
+                    src={Logo}
+                    alt="logo"
+                    width={150}
+                    className="logo drop-shadow-lg"
+                />
                 <ul className="w-full flex flex-col items-center justify-center default__text">
                     <li>
                         <Link

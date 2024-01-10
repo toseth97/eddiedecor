@@ -9,8 +9,8 @@ function App() {
     return (
         <div className="w-full default__bg min-h-screen">
             <BrowserRouter>
-                <div className="w-full flex gap-5 z-20">
-                    <div className="lg:w-2/12 p-4 lg:block hidden shadow-2xl h-screen ">
+                <div className="w-full flex z-20">
+                    <div className="lg:w-3/12 p-4 lg:block hidden shadow-2xl h-screen sticky top-0 left-0 ">
                         <Navigation />
                     </div>
                     <div
@@ -20,7 +20,10 @@ function App() {
                     >
                         <Navigation />
                     </div>
-                    <div onClick={() => setMenu((prev) => !prev)}>
+                    <div
+                        onClick={() => setMenu((prev) => !prev)}
+                        className="text-white bg-black"
+                    >
                         {menu === false ? (
                             <i className="bx menu__btn lg:hidden block text-3xl bx-menu-alt-right border p-2 rounded-lg"></i>
                         ) : (
