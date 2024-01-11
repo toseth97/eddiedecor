@@ -2,8 +2,34 @@ import Typewriter from "typewriter-effect";
 import { events } from "../utils";
 import EventCard from "./EventCard";
 import Mr_Heddy from "../assets/Mr_heddy.jpg";
+import testimony from "../data";
+import { useEffect, useState } from "react";
+import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
+import { FaQuoteRight } from "react-icons/fa";
 
 const Hero = () => {
+    const [people, setPeople] = useState(testimony);
+    const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+        const lastIndex = people.length - 1;
+        if (index < 0) {
+            setIndex(lastIndex);
+        }
+        if (index > lastIndex) {
+            setIndex(0);
+        }
+    }, [index, people]);
+
+    useEffect(() => {
+        const slider = setInterval(() => {
+            setIndex(index + 1);
+        }, 5000);
+        return () => {
+            clearInterval(slider);
+        };
+    }, [index]);
+
     return (
         <div className="w-full flex flex-col items-center">
             <div
@@ -125,7 +151,7 @@ const Hero = () => {
                             and make sure that we exceed your expectations.
                         </li>
                     </ul>
-                    <div className="my-8 w-full flex lg:flex-row flex-col gap-8 items-center justify-center">
+                    <div className="my-8 w-full flex lg:flex-row flex-col gap-16 items-center justify-center">
                         <div className="flex  flex-col items-center justify-center">
                             <div className="relative lg:w-80 lg:h-80 w-60 h-60 overflow-hidden rounded-full">
                                 <img
@@ -134,15 +160,15 @@ const Hero = () => {
                                     className="absolute"
                                 />
                             </div>
-                            <h1 className="font-bold default__text">
-                                Heddy Decorations
+                            <h1 className="font-bold default__text text-xl mt-4">
+                                Titus Adefiranye
                             </h1>
                             <p className="text-xs italic">
                                 Founder/CEO Heddy Decorations
                             </p>
                         </div>
                         <div className="lg:w-6/12 w-full">
-                            <div>
+                            <div className="text-center lg:text-left">
                                 <h1 className="text-xl default__text font-bold my-2 text-center lg:text-left">
                                     Our Mission:
                                 </h1>
@@ -152,8 +178,8 @@ const Hero = () => {
                                     customer satisfaction
                                 </p>
                             </div>
-                            <div>
-                                <h1 className="text-xl default__text font-bold my-2 text-center lg:text-left">
+                            <div className="text-center lg:text-left">
+                                <h1 className="text-xl default__text font-bold my-2 ">
                                     Our Vision:
                                 </h1>
                                 <p className="text-sm">
@@ -165,6 +191,60 @@ const Hero = () => {
                             </div>
                         </div>
                     </div>
+                    <section id="testimony" className="section my-8">
+                        <div className="title">
+                            <h1 className="lg:text-4xl text-3xl uppercase font-bold my-4">
+                                Testimony
+                            </h1>
+                        </div>
+                        <div className="section-center">
+                            {people.map((person, personIndex) => {
+                                const { id, image, name, quote } = person;
+
+                                let position = "nextSlide";
+                                if (personIndex === index) {
+                                    position = "activeSlide";
+                                }
+                                if (
+                                    personIndex === index - 1 ||
+                                    (index === 0 &&
+                                        personIndex === people.length - 1)
+                                ) {
+                                    position = "lastSlide";
+                                }
+
+                                return (
+                                    <article
+                                        className={`${position} flex flex-col items-center`}
+                                        key={id}
+                                    >
+                                        <img
+                                            src={image}
+                                            alt={name}
+                                            className="person-img"
+                                        />
+                                        <h4 className="default__text font-bold mb-4">
+                                            {name}
+                                        </h4>
+                                        <p className="text">{quote}</p>
+                                        <FaQuoteRight className="icon" />
+                                    </article>
+                                );
+                            })}
+                            <button
+                                className="prev"
+                                onClick={() => setIndex(index - 1)}
+                            >
+                                <FiChevronLeft />
+                            </button>
+                            <button
+                                className="next"
+                                onClick={() => setIndex(index + 1)}
+                            >
+                                <FiChevronRight />
+                            </button>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
