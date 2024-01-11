@@ -8,7 +8,7 @@ import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import { FaQuoteRight } from "react-icons/fa";
 
 const Hero = () => {
-    const [people, setPeople] = useState(testimony);
+    const people = testimony;
     const [index, setIndex] = useState(0);
 
     useEffect(() => {
@@ -191,13 +191,13 @@ const Hero = () => {
                             </div>
                         </div>
                     </div>
-                    <section id="testimony" className="section my-8">
+                    <section id="testimony" className="section my-8 w-full">
                         <div className="title">
                             <h1 className="lg:text-4xl text-3xl uppercase font-bold my-4">
                                 Testimony
                             </h1>
                         </div>
-                        <div className="section-center">
+                        <div className="section-center lg:w-7/12 w-full">
                             {people.map((person, personIndex) => {
                                 const { id, image, name, quote } = person;
 
@@ -226,7 +226,9 @@ const Hero = () => {
                                         <h4 className="default__text font-bold mb-4">
                                             {name}
                                         </h4>
-                                        <p className="text">{quote}</p>
+                                        <p className="text-sm opacity-60 mt-8">
+                                            {quote}
+                                        </p>
                                         <FaQuoteRight className="icon" />
                                     </article>
                                 );
@@ -245,6 +247,11 @@ const Hero = () => {
                             </button>
                         </div>
                     </section>
+
+                    <div
+                        id="contact"
+                        className="w-full flex flex-col items-center justify-center"
+                    ></div>
                 </div>
             </div>
         </div>
