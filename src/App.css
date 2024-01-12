@@ -26,6 +26,12 @@ font-family: 'Nunito Sans', sans-serif;
 .default__bg{
   background-color: var(--default-bg);
 }
+.dark__bg{
+  background-color: var(--highlighting-color);
+}
+.light__text{
+  color: var(--default-bg);
+}
 .default__text{
   color: var(--highlighting-color) ;
 }
@@ -196,5 +202,33 @@ article.nextSlide {
   transform: translateX(100%);
 }
 
+.blogBtn{
+  background-color: var(--default-bg);
+  color: var(--highlighting-color);
+  border: 1px solid var(--default-bg);
+}
+.blogBtn:hover{
+  background-color: var(--highlighting-color);
+  color: var(--default-bg);
+}
 
+.loadState{
+  border: 3px solid white;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: load 2s linear infinite;
+}
 
+@keyframes load {
+  0%{
+    transform: rotate(0deg) scale(1);
+  }
+  55%{
+    transform: rotate(180deg) scale(.85);
+  }
+  100%{
+    transform: rotate(360deg) scale(1);
+  }
+}
