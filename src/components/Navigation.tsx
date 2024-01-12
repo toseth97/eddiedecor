@@ -49,7 +49,7 @@ const Navigation: React.FC<ChildProps> = ({ setMenu }) => {
                 <div className="social__links"></div>
 
                 <div className="text-xs default__text text-center mt-8">
-                    <div className="my-4">
+                    <div className="my-4 lg:text-2xl text-3xl">
                         <SocialLinks />
                     </div>
 
