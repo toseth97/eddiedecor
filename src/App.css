@@ -7,7 +7,11 @@ font-family: 'Nunito Sans', sans-serif;
 
 :root{
   --default-bg: #FFF7EA;
-  --highlighting-color: #A2783A
+  --highlighting-color: #6d4f23
+}
+
+fjdkh{
+  color: #6d4f23
 }
 
 *{
@@ -40,12 +44,18 @@ font-family: 'Nunito Sans', sans-serif;
 .logo{
   mix-blend-mode: multiply;
 }
+.lg-screen__menu{
+  position: sticky !important;
+  top: 0;
+  left: 0;
+}
 .mobile__menu{
-  position: absolute;
+  position: fixed;
   z-index: 998;
   top: 0;
   left: -100%;
 }
+
 .mobile__menu.active{
   left: 0%;
 }

@@ -1,41 +1,47 @@
 import "./App.css";
+import { MenuIcon } from "./components/MenuIcon";
 import Navigation from "./components/Navigation";
-import Hero from "./components/Hero";
+import About from "./components/About";
+import { Contact } from "./components/Contact";
+import Footer from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
+import Services from "./components/Services";
 
 function App() {
-    const [menu, setMenu] = useState(false);
+    type myState = boolean;
+    const [menu, setMenu] = useState<myState>(false);
     return (
-        <div className="w-full default__bg min-h-screen">
-            <BrowserRouter>
-                <div className="w-full flex z-20">
-                    <div className="lg:w-3/12 p-4 lg:block hidden shadow-2xl h-screen sticky top-0 left-0 ">
-                        <Navigation />
-                    </div>
-                    <div
-                        className={`w-10/12 lg:hidden block mobile__menu p-4 shadow-2xl h-screen ${
-                            menu === true ? "active" : null
-                        } default__bg`}
-                    >
-                        <Navigation />
-                    </div>
-                    <div
-                        onClick={() => setMenu((prev) => !prev)}
-                        className="text-white bg-black"
-                    >
-                        {menu === false ? (
-                            <i className="bx menu__btn lg:hidden block text-3xl bx-menu-alt-right border p-2 rounded-lg"></i>
-                        ) : (
-                            <i className="bx menu__btn lg:hidden block text-3xl bx-x border p-2 rounded-lg"></i>
-                        )}
-                    </div>
-                    <Routes>
-                        <Route path="/" element={<Hero />} />
-                    </Routes>
+        <BrowserRouter>
+            <MenuIcon menu={menu} setMenu={setMenu} />
+            <div
+                className={`w-full flex z-20 ${
+                    menu === true ? "overflow-y-hidden" : null
+                }`}
+            >
+                <div
+                    className={`w-10/12 lg:hidden block mobile__menu p-4 shadow-2xl h-screen ${
+                        menu === true ? "active" : null
+                    } default__bg  z-50`}
+                >
+                    <Navigation setMenu={setMenu} />
                 </div>
-            </BrowserRouter>
-        </div>
+
+                <div className="lg:w-3/12 p-4 lg:block hidden shadow-2xl h-screen sticky left-0 top-0">
+                    <Navigation setMenu={setMenu} />
+                </div>
+                <div
+                    className={`lg:w-9/12 ${menu ? "overflow-y-hidden" : null}`}
+                >
+                    <Routes>
+                        <Route path="/" element={<Services />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/contact" element={<Contact />} />
+                    </Routes>
+                    <Footer />
+                </div>
+            </div>
+        </BrowserRouter>
     );
 }
 
