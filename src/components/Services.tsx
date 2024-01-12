@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { events } from "../utils";
 import EventCard from "./EventCard";
 import Hero from "./Hero";
