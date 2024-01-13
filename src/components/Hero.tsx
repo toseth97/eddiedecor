@@ -10,7 +10,7 @@ const Hero = () => {
                 <p className="alex__brush text-3xl default__text">
                     Heddy Decorations!
                 </p>
-                <h1 className="font-bold text-3xl my-4 uppercase lg:min-h-20 min-h-28">
+                <h1 className="font-bold text-3xl my-4 uppercase lg:min-h-24 min-h-36">
                     <Typewriter
                         options={{
                             strings: [
