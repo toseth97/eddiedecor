@@ -13,10 +13,7 @@ const Services = () => {
     return (
         <div className="w-full flex flex-col items-center">
             <Hero />
-            <div
-                id="service"
-                className="flex flex-col items-center w-full pt-8"
-            >
+            <div id="service" className="flex flex-col items-center w-full p-8">
                 <div className="w-full">
                     <h1 className=" uppercase tracking-wider font-bold text-4xl">
                         Our Services
