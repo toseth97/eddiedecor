@@ -13,14 +13,17 @@ const Services = () => {
     return (
         <div className="w-full flex flex-col items-center">
             <Hero />
-            <div id="service" className="flex flex-col items-center w-full p-8">
+            <div
+                id="service"
+                className="flex flex-col items-center w-full pt-8"
+            >
                 <div className="w-full">
                     <h1 className=" uppercase tracking-wider font-bold text-4xl">
                         Our Services
                     </h1>
                 </div>
 
-                <div className="event__card flex gap-8 lg:flex-row flex-col my-8 lg:h-[80vh] h-auto">
+                <div className="event__card flex gap-8 lg:flex-row flex-col  mt-8 lg:h-[80vh] h-auto">
                     {events.map((item) => (
                         <EventCard key={item.id} item={item} />
                     ))}

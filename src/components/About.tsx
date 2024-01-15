@@ -122,7 +122,7 @@ const About = () => {
                                 Titus Adefiranye
                             </h1>
                             <p className="text-xs italic">
-                                Founder/CEO Heddy Decorations $ Event planning
+                                Founder/CEO Heddy Decorations & Event planning
                                 services
                             </p>
                         </div>
