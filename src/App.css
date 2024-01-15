@@ -6,12 +6,12 @@ font-family: 'Nunito Sans', sans-serif;
  */
 
 :root{
-  --default-bg: #FFF7EA;
-  --highlighting-color: #6d4f23
+  --default-bg: rgb(255, 228, 255);
+  --highlighting-color: rgb(26, 6, 26)
 }
 
 fjdkh{
-  color: #6d4f23
+  color: rgb(26, 6, 26)
 }
 
 *{

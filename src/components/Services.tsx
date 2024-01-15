@@ -15,9 +15,6 @@ const Services = () => {
             <Hero />
             <div id="service" className="flex flex-col items-center w-full p-8">
                 <div className="w-full">
-                    <p className="default__text alex__brush text-2xl">
-                        Heddy Decorations...
-                    </p>
                     <h1 className=" uppercase tracking-wider font-bold text-4xl">
                         Our Services
                     </h1>
