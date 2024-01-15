@@ -77,7 +77,7 @@ ul>li{
   background-image: radial-gradient(circle,transparent,rgba(0, 0, 0, 0.692)), url("../src/assets/herro__background1.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: scroll;
+  background-attachment: fixed;
 }
 .Wedding:hover .text__slide, .Birthday:hover .text__slide, .Events:hover .text__slide{
   bottom:0;
