@@ -14,7 +14,7 @@ const EventCard: React.FC<props> = ({ item: { title, text, img } }) => {
         <div
             className={`w-full rounded-lg relative overflow-hidden h-[80%] ${title}`}
         >
-            <div className="w-full absolute z-10 text-white bottom-[-100%] p-8 text__slide ">
+            <div className="w-full absolute z-10 text-white lg:bottom-[-100%] bottom-0 p-8 text__slide ">
                 <p className="alex__brush text-4xl">{title}</p>
                 <p className="text-sm">{text}</p>
             </div>
