@@ -6,12 +6,12 @@ font-family: 'Nunito Sans', sans-serif;
  */
 
 :root{
-  --default-bg: #faedf2;
-  --highlighting-color: #392467;
+  --default-bg: #fff8fb;
+  --highlighting-color: rgb(80, 0, 80);
 }
 
 fjdkh{
-  color: #faedf2
+  color: rgb(80, 0, 80)
 }
 
 input, textarea{
