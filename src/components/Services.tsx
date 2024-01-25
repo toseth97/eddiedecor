@@ -31,7 +31,7 @@ const Services = () => {
                 </div>
                 <div className="event__card flex flex-col">
                     <h1 className="text-3xl mt-4 font-bold mb-0">Gallery</h1>
-                    <em className="my-2 mb-4 default__text">
+                    <em className="my-2 mb-4 opacity-70">
                         Here at Heddy Decorations & Event planning services, we
                         make your dream event come to life .
                     </em>
