@@ -8,7 +8,7 @@ const Hero = () => {
         >
             <div className="default__bg px-8 py-2 mb-16 lg:ml-8 mx-0 lg:w-6/12 w-11/12 pb-3">
                 <p className="alex__brush text-3xl default__text">
-                    Heddy Decorations <br /> & Event planning!
+                    Heddy Decorations & Event planning!
                 </p>
                 <h1 className="font-bold text-3xl my-4 uppercase lg:min-h-24 min-h-36">
                     <Typewriter

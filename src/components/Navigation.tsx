@@ -8,7 +8,7 @@ interface ChildProps {
 
 const Navigation: React.FC<ChildProps> = ({ setMenu }) => {
     return (
-        <header className="flex flex-col items-center py-8 w-full">
+        <header className="flex flex-col h-screen items-center py-8 w-full">
             <nav className="flex flex-col items-center justify-center lg:w-8/12 w-full">
                 <img
                     src={Logo}

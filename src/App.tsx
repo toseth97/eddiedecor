@@ -15,12 +15,10 @@ function App() {
         <BrowserRouter>
             <MenuIcon menu={menu} setMenu={setMenu} />
             <div
-                className={`w-full flex z-20 ${
-                    menu === true ? "overflow-y-hidden" : null
-                }`}
+                className={`1stleverl w-full flex z-20 justify-between items-start  `}
             >
                 <div
-                    className={`w-10/12 lg:hidden block mobile__menu p-4 shadow-2xl h-screen ${
+                    className={`2ndlevel w-10/12 lg:hidden block mobile__menu p-4 shadow-2xl h-screen ${
                         menu === true ? "active" : null
                     } default__bg  z-50`}
                 >
@@ -30,9 +28,7 @@ function App() {
                 <div className="lg:w-3/12 p-4 lg:block hidden shadow-2xl h-screen sticky left-0 top-0">
                     <Navigation setMenu={setMenu} />
                 </div>
-                <div
-                    className={`lg:w-9/12 ${menu ? "overflow-y-hidden" : null}`}
-                >
+                <div className="lg:w-9/12">
                     <Routes>
                         <Route path="/" element={<Services />} />
                         <Route path="/about" element={<About />} />
