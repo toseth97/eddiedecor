@@ -29,9 +29,12 @@ const Services = () => {
                         <EventCard key={item.id} item={item} />
                     ))}
                 </div>
-                <div className="event__card flex gap-8 flex-col">
+                <div className="event__card flex flex-col">
                     <h1 className="text-3xl mt-4 font-bold mb-0">Gallery</h1>
-                    <p>Take a peak into our designs</p>
+                    <em className="my-2 mb-4">
+                        Here at Heddy Decorations & Event planning services, we
+                        make your dream event come to life .
+                    </em>
                     <div className="relative">
                         <p className="absolute flex justify-center items-center right-5 bottom-5 py-1 px-4 text-sm dark__bg text-white rounded-xl z-10">
                             <i className="bx bx-left-arrow-alt"></i>
