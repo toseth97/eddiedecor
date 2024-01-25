@@ -258,6 +258,7 @@ article.nextSlide {
   scroll-snap-type: x;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  
 }
 
 .image-list::-webkit-scrollbar{
