@@ -76,7 +76,7 @@ ul>li{
 .hero__background{
   background-image: radial-gradient(circle,transparent,rgba(0, 0, 0, 0.692)), url("../src/assets/herro__background1.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-attachment: fixed;
 }
 .Wedding:hover .text__slide, .Birthday:hover .text__slide, .Events:hover .text__slide{
@@ -205,6 +205,8 @@ article {
   opacity: 0;
   transition: var(--transition);
 }
+
+
 article.activeSlide {
   opacity: 1;
   transform: translateX(0);
@@ -246,3 +248,26 @@ article.nextSlide {
     transform: rotate(360deg) scale(1);
   }
 }
+
+
+
+
+.image-list {
+  height: 300px;
+  overflow: scroll;
+  scroll-snap-type: x;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.image-list::-webkit-scrollbar{
+  display: none;
+}
+
+.image-list img {
+  width: 30rem;
+  scroll-snap-align: start;
+
+}
+
+

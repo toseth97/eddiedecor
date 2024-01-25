@@ -18,7 +18,7 @@ const EventCard: React.FC<props> = ({ item: { title, text, img } }) => {
                 <p className="alex__brush text-4xl">{title}</p>
                 <p className="text-sm">{text}</p>
             </div>
-            <img src={img} alt={title} className="w-full" />
+            <img src={img} alt={title} className="w-full" loading="lazy" />
         </div>
     );
 };

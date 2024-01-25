@@ -14,11 +14,9 @@ function App() {
     return (
         <BrowserRouter>
             <MenuIcon menu={menu} setMenu={setMenu} />
-            <div
-                className={`1stleverl w-full flex z-20 justify-between items-start  `}
-            >
+            <div className={` w-full flex z-20 justify-between items-start  `}>
                 <div
-                    className={`2ndlevel w-10/12 lg:hidden block mobile__menu p-4 shadow-2xl h-screen ${
+                    className={` w-10/12 lg:hidden block mobile__menu p-4 shadow-2xl h-screen ${
                         menu === true ? "active" : null
                     } default__bg  z-50`}
                 >
