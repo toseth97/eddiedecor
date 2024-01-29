@@ -111,7 +111,7 @@ export const Contact = () => {
                         ))}
                     </div>
                 </div>
-                <div className="dark__bg rounded-lg light__text p-16">
+                <div className="dark__bg rounded-lg light__text p-8 mx-4">
                     <h1 className="lg:text-3xl text-2xl font-bold uppercase">
                         Make your bookings!
                     </h1>
