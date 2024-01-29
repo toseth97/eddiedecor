@@ -24,7 +24,7 @@ const Services = () => {
                     </h1>
                 </div>
 
-                <div className="event__card flex gap-8 lg:flex-row flex-col  mt-8 lg:h-[80vh] h-auto">
+                <div className="event__card flex gap-8 lg:flex-row flex-col  mt-8  h-auto">
                     {events.map((item) => (
                         <EventCard key={item.id} item={item} />
                     ))}

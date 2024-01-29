@@ -6,12 +6,11 @@ font-family: 'Nunito Sans', sans-serif;
  */
 
 :root{
-  --default-bg: #fff8fb;
+  --default-bg: #fffefe;
   --highlighting-color: rgb(80, 0, 80);
 }
-
-fjdkh{
-  color: rgb(80, 0, 80)
+.sgsg{
+  color: #fffefe;
 }
 
 input, textarea{
@@ -77,7 +76,7 @@ ul>li{
   background-image: radial-gradient(circle,transparent,rgba(0, 0, 0, 0.692)), url("../src/assets/herro__background1.jpg");
   background-size: cover;
   background-position: bottom;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 .Wedding:hover .text__slide, .Birthday:hover .text__slide, .Events:hover .text__slide{
   bottom:0;

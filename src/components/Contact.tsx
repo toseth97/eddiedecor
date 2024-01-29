@@ -84,7 +84,7 @@ export const Contact = () => {
             content:
                 "No 1a, Titilayo cresent Olumbe Bassiar drive, Bodija, Ashi,Ibadan.",
         },
-        { id: 3, type: "Phone:", content: "+23470607371" },
+        { id: 3, type: "Phone:", content: "+2347060467371" },
     ];
 
     return (

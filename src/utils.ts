@@ -21,6 +21,9 @@ import _17 from "./assets/17.jpg"
 import _18 from "./assets/18.jpg"
 import _19 from "./assets/19.jpg"
 import _20 from "./assets/20.jpg"
+import _21 from "./assets/21.jpg"
+import _22 from "./assets/22.jpg"
+import _23 from "./assets/23.jpg"
 
 export const events = [
     {
@@ -127,5 +130,17 @@ export const gallery = [
     {
         id:20, 
         img: _20       
+    },
+    {
+        id:21, 
+        img: _21       
+    },
+    {
+        id:22, 
+        img: _22       
+    },
+    {
+        id:23, 
+        img: _23       
     }
 ]

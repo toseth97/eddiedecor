@@ -11,14 +11,17 @@ interface props {
 
 const EventCard: React.FC<props> = ({ item: { title, text, img } }) => {
     return (
-        <div
-            className={`w-full rounded-lg relative overflow-hidden h-[80%] ${title}`}
-        >
+        <div className={`w-full rounded-lg relative overflow-hidden ${title}`}>
             <div className="w-full absolute z-10 text-white lg:bottom-[-100%] bottom-0 p-8 text__slide ">
                 <p className="alex__brush text-4xl">{title}</p>
                 <p className="text-sm">{text}</p>
             </div>
-            <img src={img} alt={title} className="w-full" loading="lazy" />
+            <img
+                src={img}
+                alt={title}
+                className="w-full object-cover lg:h-72 h-96"
+                loading="lazy"
+            />
         </div>
     );
 };
