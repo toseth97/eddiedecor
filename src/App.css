@@ -73,16 +73,17 @@ ul>li{
   text-align: center;
 }
 .hero__background{
-  background-image: radial-gradient(circle,transparent,rgba(0, 0, 0, 0.692)), url("../src/assets/herro__background1.jpg");
+  background-image: radial-gradient(circle,transparent,rgba(0, 0, 0, 0.832)), url("../src/assets/herro__background1.jpg");
   background-size: cover;
+  object-fit: cover;
   background-position: bottom;
-  background-attachment: scroll;
+  background-attachment: fixed;
 }
 .Wedding:hover .text__slide, .Birthday:hover .text__slide, .Events:hover .text__slide{
   bottom:0;
 }
 .Wedding:hover img, .Birthday:hover img, .Events:hover img{
-  transform: scale(1.2);
+  transform: scale(1.08);
 }
 .text__slide{
   background-image: linear-gradient(to bottom,transparent, rgba(0, 0, 0, 0.932), black);
