@@ -73,7 +73,7 @@ ul>li{
   text-align: center;
 }
 .hero__background{
-  background-image: radial-gradient(circle,transparent,rgba(0, 0, 0, 0.832)), url("../src/assets/herro__background1.jpg");
+  background-image: radial-gradient(circle,transparent,rgba(0, 0, 0, 0.404)), url("../src/assets/herro__background1.jpg");
   background-size: cover;
   object-fit: cover;
   background-position: bottom;
