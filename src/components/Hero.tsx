@@ -6,7 +6,7 @@ const Hero = () => {
             id="home"
             className="hero__background w-full lg:h-[80vh] h-[70vh] flex flex-col justify-end"
         >
-            <div className="default__bg px-8 py-2 mb-16 lg:ml-8 mx-0 lg:w-6/12 w-11/12 pb-3">
+            <div className="default__bg px-8 py-2 mb-16 lg:ml-8 mx-0 lg:w-6/12 w-11/12 pb-3 lg:rounded-r-none rounded-r-3xl ">
                 <p className="alex__brush text-3xl default__text">
                     Heddy Decorations & Event planning!
                 </p>
