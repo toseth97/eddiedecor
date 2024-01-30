@@ -181,6 +181,7 @@ const About = () => {
                                             src={image}
                                             alt={name}
                                             className="person-img"
+                                            loading="lazy"
                                         />
                                         <h4 className="default__text font-bold mb-4">
                                             {name}
