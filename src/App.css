@@ -75,7 +75,7 @@ ul>li{
 .hero__background{
   background-image: radial-gradient(circle,transparent,rgba(0, 0, 0, 0.404)), url("../src/assets/herro__background1.jpg");
   background-size: cover;
-  object-fit: cover;
+  object-fit: contain;
   background-position: bottom;
   background-attachment: fixed;
 }
@@ -132,7 +132,7 @@ ul>li{
   margin-bottom: 1rem;
   width: 150px;
   height: 150px;
-  object-fit: cover;
+  
   border: 4px solid var(--clr-grey-8);
   box-shadow: var(--dark-shadow);
 }
